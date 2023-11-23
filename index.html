@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form and google map</title>
+  </head>
+  <body style="text-align: center">
+    <h4>Student Registration form</h4>
+    <hr style="width: 400px" />
+    <p>Please enter relevent information -----------------------</p>
+    <br />
+    <form action="">
+      <label for="District" style="float: left; margin-left: 298px">
+        District (<small
+          >Institute District where you want to do your course</small
+        >) * </label
+      ><br />
+      <select name="District" id="District" style="width: 400px">
+        <option value="">--select one--</option>
+        <option value="">Dhaka</option>
+        <option value="">Rajshahi</option>
+        <option value="">Khulna</option>
+        <option value="">Mobarakgong</option>
+        <option value="">cox-bazar</option>
+        <option value="">Borishal</option></select
+      ><br />
+      <label for="course" style="float: left; margin-left: 298px">Course*</label
+      ><br />
+      <select name="course" id="course" style="width: 400px">
+        <option value="">--select one--</option>
+        <option value="">Web design</option>
+        <option value="">graphics design</option>
+        <option value="">Digital marketing</option>
+        <option value="">Cse</option>
+        <option value="">EEE</option>
+        <option value="">MEchanical</option></select
+      ><br />
+      <label for="StudentName" style="float: left; margin-left: 298px"
+        >Student Name*</label
+      ><br />
+      <input type="text" class="text" id="StudentName" style="width: 392px" />
+      <br />
+      <label for="MotherName" style="float: left; margin-left: 298px"
+        >Mother Name*</label
+      ><br />
+      <input
+        type="text"
+        class="text"
+        id="MotherName"
+        style="width: 392px"
+      /><br />
+      <label for="FatherName" style="float: left; margin-left: 298px"
+        >Father Name*</label
+      ><br />
+      <input
+        type="text"
+        class="text"
+        id="FatherName"
+        style="width: 392px"
+      /><br />
+
+      <fieldset style="width: 372px; margin-left: 298px">
+        <legend style="text-align: left">Date of Birth*</legend>
+        <table style="width: 100px">
+          <tbody>
+            <tr>
+              <td style="text-align: left">Day:</td>
+              <td style="text-align: left">Month:</td>
+              <td style="text-align: left">Year:</td>
+            </tr>
+            <tr>
+              <td>
+                <select name="date" id="" style="width: 120px">
+                  <option value="">Select</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+                </select>
+              </td>
+              <td>
+                <select name="Month" id="" style="width: 120px">
+                  <option value="">Select</option>
+                  <option value="">January</option>
+                  <option value="">February</option>
+                  <option value="">March</option>
+                  <option value="">April</option>
+                  <option value="">May</option>
+                  <option value="">June</option>
+                  <option value="">July</option>
+                  <option value="">August</option>
+                  <option value="">September</option>
+                  <option value="">October</option>
+                  <option value="">November</option>
+                  <option value="">December</option>
+                </select>
+              </td>
+              <td>
+                <select name="Year" id="" style="width: 120px">
+                  <option value="">Select</option>
+                  <option value="">1990</option>
+                  <option value="">1991</option>
+                  <option value="">1992</option>
+                  <option value="">1993</option>
+                  <option value="">1994</option>
+                  <option value="">1995</option>
+                  <option value="">1996</option>
+                  <option value="">1997</option>
+                  <option value="">1998</option>
+                  <option value="">1999</option>
+                  <option value="">2000</option>
+                  <option value="">2001</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+      <br />
+
+      <div style="text-align: left; margin-left: 298px">
+        <label for="gender">Gender*</label>
+        <input type="radio" name="gender" />
+        <label for=""><strong>Male</strong></label>
+        <input type="radio" name="gender" />
+        <label for=""><strong>Female</strong></label>
+      </div>
+      <br />
+      <div style="text-align: left; margin-left: 298px">
+        <label for="handicap">Physically Handicapped*</label>
+        <input type="radio" name="handicap" />
+        <label for=""><strong>Yes</strong></label>
+        <input type="radio" name="handicap" />
+        <label for=""><strong>No</strong></label
+        ><br /><br />
+        <label for="email">Email*</label><br />
+        <input type="text" class="text" id="email" style="width: 392px" /><br />
+        <label for="phone">Phone (Must be 11 Digits)*</label><br />
+        <input type="text" class="text" id="phone" style="width: 392px" /><br />
+        <label for="phone">Identification type*</label><br />
+        <select name="identification" id="identification" style="width: 400px">
+          <option value="">select one</option>
+          <option value="">Birth certificate number</option>
+          <option value="">national id</option>
+        </select>
+        <p style="width: 400px">
+          <small>
+            Identification No. (Must be 10 digits for new NID or 17 digits for
+            old NID. If your National ID is 13 digits, then please add your
+            birth year with the ID as prefix. Example:
+            1980XXXXXXXXXXXXX)*</small
+          >
+        </p>
+        <label for="Home District">Home District*</label><br />
+        <select name="homedistrict" id="homedistrict" style="width: 400px">
+          <option value="">--select one--</option>
+          <option value="">Dhaka</option>
+          <option value="">Rajshahi</option>
+          <option value="">Khulna</option>
+          <option value="">Mobarakgong</option>
+          <option value="">cox-bazar</option>
+          <option value="">Borishal</option></select
+        ><br />
+        <label for="photo">Photo graph*</label><br />
+        <input type="file" name="" id="photo" /><br />
+        <label for="Signature">Signature*</label><br />
+        <input type="file" name="" id="Signature" /><br />
+      </div>
+    </form>
+    <br /><br />
+    <h3>Goole Map*</h3>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d139916.20486647237!2d89.4457056861757!3d22.849852155341015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff9071cb47152f%3A0xf04b212290718952!2sKhulna!5e0!3m2!1sen!2sbd!4v1700720677288!5m2!1sen!2sbd"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </body>
+</html>
